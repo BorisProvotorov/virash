@@ -1,0 +1,94 @@
+.gallery-modal {
+	display: none;
+	
+
+	&__title {
+		font-size: 18px;
+		margin-top: 10px;
+		margin-bottom: 60px;
+	}
+
+	&__container {
+		text-align: center;
+		margin: -44px;
+		position: relative;
+	}
+
+
+	&--vitraz &__container {
+		padding: 75px 60px 0px;
+	}
+
+
+	&--vitraz &__img-wrap {
+		background-color: #F1F2F6;
+		padding: 70px 196px 65px 196px;
+	}
+
+	&--docs &__container {
+		padding: 90px 55px 46px 55px;
+	}
+
+	&__img {
+		/*max-height: 600px;*/
+	}
+
+	&__close {
+		background-image: url("../img/ico-close.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: transparent;
+		display: block;
+		height: 24px;
+		width: 24px;
+		border: none;
+		cursor: pointer;
+		position: absolute;
+		right: 20px;
+		top: 30px;
+		
+		&:focus {
+			outline: none;
+		}
+	}
+
+	@media(max-width: 992px) {
+		
+		&--vitraz &__container {
+			padding-left: 22px;
+			padding-right: 22px;
+		}
+
+		&--vitraz &__img-wrap {
+			padding-top: 35px;
+			padding-left: 98px;
+			padding-right: 98px;
+			padding-bottom: 107px;
+		}
+
+		&--docs &__container {
+			padding: 60px 0 0;
+		}
+	}
+
+	@media(max-width: 567px) {
+		&--vitraz &__img-wrap {
+			padding-left: 49px;
+			padding-right: 49px;
+			padding-bottom: 53px;
+		}
+	}
+
+
+	@media(max-width: 479px) {
+		&--vitraz &__img-wrap {
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+
+		.gallery-modal__title {
+			margin-bottom: 40px;
+		}
+	}
+
+}

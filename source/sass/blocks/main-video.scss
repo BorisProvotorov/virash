@@ -1,0 +1,192 @@
+.main-video {
+	display: flex;
+	min-height: 708px;
+
+	&__left {
+		width: 50%;
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		padding-left: 15px;
+
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 452px;
+			height: 452px;
+			border: 150px solid #f5d6c9;
+			border-radius: 100%;
+			right: -226px;
+			top: 50%;
+			margin-top: -226px;
+			z-index: -1;
+		}
+	}
+
+	&__right {
+		width: 50%;
+		background-image: url("../img/vendor/video-poster-1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		overflow: hidden;
+
+		&:after, &__right.open:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-color: rgba(255,255,255,0.4);
+		}
+
+		iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	
+	&__controls {
+		opacity: 1;
+		-webkit-transition: all 1s;
+		   -moz-transition: all 1s;
+		    -ms-transition: all 1s;
+		     -o-transition: all 1s;
+		        transition: all 1s;
+	}
+	
+
+	&__content {
+		max-width: 500px;
+		margin-right: 135px;
+		padding-right: 90px;
+	}
+
+	&__right.open &__controls {
+		opacity: 0;
+		visibility: hidden;
+			-webkit-transition: all 1s;
+		   -moz-transition: all 1s;
+		    -ms-transition: all 1s;
+		     -o-transition: all 1s;
+		        transition: all 1s;
+	}
+
+	&__title {
+		padding-top: 70px;
+		padding-bottom: 30px;
+	}
+
+	&__title-video {
+		position: relative;
+		z-index: 3;
+		max-width: 340px;
+	}
+
+	&__circle-play {
+	    width: 420px;
+	    height: 420px;
+	    background-image: url("../img/ico-play.png");
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    position: absolute;
+	    border: 5px solid rgba(255,255,255,.5);
+	    border-radius: 100%;
+	    top: 50%;
+	    left: -203px;
+	    margin-top: -210px;
+	    z-index: 2;
+	    cursor: pointer;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			right: 20px;
+			bottom: 20px;
+			border-radius: 100%;
+			border: 20px solid rgba(255,255,255,0.5);
+		}
+	}
+
+
+	&__btn-play {
+		background-image: url(../img/ico-play-black.svg);
+		display: block;
+		width: 55px;
+		height: 55px;
+		cursor: pointer;
+		position: relative;
+		z-index: 1;
+		margin: 27px auto 0 auto;
+	}
+
+
+	&__bottom {
+		padding-top: 45px;
+		margin-right: -20px;
+	}
+
+
+	&__arrow-down {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+
+	@media(max-width: 992px) {
+		& {
+			flex-direction: column;
+		}
+
+		&__left, &__right {
+			width: 100%;
+		}
+
+		&__right {
+			height: 334px;
+		}
+
+		&__left::before {
+			display: none;
+		}
+
+		&__content {
+			max-width: none;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-right: 0;
+			padding-bottom: 72px;
+		}
+
+		&__arrow-down {
+			left: 75%;
+		}
+
+		&__title {
+			padding-top: 48px;
+			padding-bottom: 2px;
+		}
+
+		&__bottom {
+			padding-top: 20px;
+		}
+	}
+
+}

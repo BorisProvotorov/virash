@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вираж</title>
+    <link rel="stylesheet" href="js/vendor/slick/slick.min.css">
+    <link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css" media="all">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>						
+	<nav class="main-navbar-fix">
+		<!-- top-line Begin -->
+		<div class="top-line">
+			<div class="container top-line__container">
+				<div class="top-line__flex">
+
+					<div class="select-city">
+						<div class="select-city__current">
+							<span class="select-city__label">Ваш город:</span>
+							<span class="select-city__current-name">Киров</span>
+						</div>
+						<ul class="select-city__list">
+							<li class="select-city__name">Киров</li>
+							<li class="select-city__name">Сыктывкар</li>
+							<li class="select-city__name">Вятские поляны</li>
+							<li class="select-city__name">Омутнинск</li>
+							<li class="select-city__name">Кирово-Чепецк</li>
+							<li class="select-city__name">Уфа</li>
+							<li class="select-city__name">Шахунья</li>
+							<li class="select-city__name">Верхняя Салда </li>
+							<li class="select-city__name">Печера</li>
+							<li class="select-city__name">Лабытнанги</li>
+						</ul>
+					</div>
+					
+					<ul class="menu-top">
+						<li class="menu-top__item"><a href="index.html" class="menu-top__link">Главная</a></li>
+						<li class="menu-top__item"><a href="about.html" class="menu-top__link">О фабрике</a></li>
+						<li class="menu-top__item"><a href="reviews.html" class="menu-top__link">Отзывы</a></li>
+						<li class="menu-top__item"><a href="our-works.html" class="menu-top__link">Наши работы</a></li>
+						<li class="menu-top__item"><a href="contacts.html" class="menu-top__link">Контакты</a></li>
+					</ul>
+					<div class="top-line__right">
+						<a class="search-show"></a>
+						<div class="burger">
+							<div class="burger__line"></div>
+						</div>
+					</div>
+					<div class="top-line__search">
+						<form class="search search--mobile">
+							<a class="search__hide"></a>
+							<input class="search__input" type="text" placeholder="Поиск">						
+						</form>
+					</div>	
+				</div>
+			</div>
+
+			<div class="top-line__mobile-nav">
+				<ul class="mobile-menu mobile-menu--main">
+					<li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Главная</a></li>
+					<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О фабрике</a></li>
+					<li class="mobile-menu__item"><a href="reviews.html" class="mobile-menu__link">Отзывы</a></li>
+					<li class="mobile-menu__item"><a href="our-works.html" class="mobile-menu__link">Наши работы</a></li>
+					<li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="mobile-menu mobile-menu--catalog">
+					<li class="mobile-menu__item"><a href="kitchen.html" class="mobile-menu__link">Кухни</a></li>
+					<li class="mobile-menu__item"><a href="case-compartment.html" class="mobile-menu__link">Шкафы-купе</a></li>
+					<li class="mobile-menu__item mobile-menu__item--has-child">
+						<div class="mobile-menu__sub-item">
+							<a href="mirrors-production.html" class="mobile-menu__link">Стекольно-зеркальная продукция</a>
+						</div>
+						<ul class="mobile-menu__sub">
+							<li class="mobile-menu__sub-item"><a href="module-picture.html" class="mobile-menu__sub-link">Модульные картины</a></li>
+							<li class="mobile-menu__sub-item"><a href="doors-case-compartment.html" class="mobile-menu__sub-link">Двери для шкафа-купе</a></li>
+							<li class="mobile-menu__sub-item"><a href="kitchen-panels.html" class="mobile-menu__sub-link">Кухонные фартуки</a></li>
+							<li class="mobile-menu__sub-item"><a href="mirrors.html" class="mobile-menu__sub-link">Зеркала</a></li>
+						</ul>
+					</li>
+					<li class="mobile-menu__item mobile-menu__item--has-child">
+						<div class="mobile-menu__sub-item">
+							<a href="facades-mdf.html" class="mobile-menu__link">Фасады МДФ</a>
+						</div>		
+						<ul class="mobile-menu__sub">
+							<li class="mobile-menu__sub-item"><a href="milling-mdf.html" class="mobile-menu__sub-link">Виды фрезеровок</a></li>
+							<li class="mobile-menu__sub-item"><a href="pvh.html" class="mobile-menu__sub-link">Пленки ПВХ</a></li>
+							<li class="mobile-menu__sub-item"><a href="facades-patina.html" class="mobile-menu__sub-link">Фасады из патины</a></li>
+							<li class="mobile-menu__sub-item"><a href="facades-color.html" class="mobile-menu__sub-link">Крашеные фасады</a></li>
+							<li class="mobile-menu__sub-item"><a href="documents.html" class="mobile-menu__sub-link">Документация</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- top-line End -->
+		
+		<!-- header Begin -->
+		<div class="header">
+			<div class="container">
+				<div class="header__flex">
+					<div class="contacts">
+						<div class="contacts__top">
+							<a class="contacts__item" href="tel:8332704289">8 (8332) 704-289</a>
+							<a class="contacts__item" href="mailto:support@myvirazh.ru">support@myvirazh.ru</a>
+						</div>
+						<div class="contacts__bottom social">
+							<a class="social__link social__link--inst" href="#">
+								<span class="visually-hidden">Инстаграм</span>
+							</a>
+							<a class="social__link social__link--vk" href="#">
+								<span class="visually-hidden">Вконтакте</span>
+							</a>
+						</div>
+					</div>
+					<a class="logo" href="index.html">
+						<img class="logo__img" src="img/vendor/logo.png" alt="">
+					</a>
+					<div class="header__search">
+						<form class="search">
+							<input class="search__input" type="text">
+							<input class="search__submit" type="submit">						
+						</form>
+						<a class="btn header__btn" href="index.html#nav-converce">Кухня в один клик!</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- header End -->
+
+		<!-- Меню каталога Begin -->
+		<div class="nav-catalog">
+			<div class="container">
+				<div class="inline-center">
+					<ul class="menu-catalog">
+						<li class="menu-catalog__item"><a href="kitchen.html" class="menu-catalog__link">Кухни</a></li>
+						<li class="menu-catalog__item"><a href="case-compartment.html" class="menu-catalog__link">Шкафы-купе</a></li>
+						<li class="menu-catalog__item">
+							<a href="mirrors-production.html" class="menu-catalog__link menu-catalog__link--has-child">Стекольно-зеркальная продукция</a>
+							<ul class="menu-catalog__sub">
+								<li class="menu-catalog__sub-item"><a href="module-picture.html" class="menu-catalog__sub-link">Модульные картины</a></li>
+								<li class="menu-catalog__sub-item"><a href="doors-case-compartment.html" class="menu-catalog__sub-link">Двери для шкафа-купе</a></li>
+								<li class="menu-catalog__sub-item"><a href="kitchen-panels.html" class="menu-catalog__sub-link">Кухонные фартуки</a></li>
+								<li class="menu-catalog__sub-item"><a href="mirrors.html" class="menu-catalog__sub-link">Зеркала</a></li>
+							</ul>
+						</li>
+						<li class="menu-catalog__item">
+							<a href="facades-mdf.html" class="menu-catalog__link menu-catalog__link--has-child">Фасады МДФ</a>
+							<ul class="menu-catalog__sub">
+								<li class="menu-catalog__sub-item"><a href="milling-mdf.html" class="menu-catalog__sub-link">Виды фрезеровок</a></li>
+								<li class="menu-catalog__sub-item"><a href="pvh.html" class="menu-catalog__sub-link">Пленки ПВХ</a></li>
+								<li class="menu-catalog__sub-item"><a href="facades-patina.html" class="menu-catalog__sub-link">Фасады из патины</a></li>
+								<li class="menu-catalog__sub-item"><a href="facades-color.html" class="menu-catalog__sub-link">Крашеные фасады</a></li>
+								<li class="menu-catalog__sub-item"><a href="documents.html" class="menu-catalog__sub-link">Документация</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Меню каталога End -->
+	</nav>
+	<main class="main-container">
+		<div class="main-container__inner">
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a class="active">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="text-section text-section--small">
+				<div class="container">
+					<h1 class="h1">Контакты</h1>
+				</div>
+			</div>
+			<form class="select-address" method="GET">
+				<div class="container select-address__container">
+					<div class="select-address__row">
+						<div class="select-address__title">Выберите город:</div>
+						<div class="select-address__slider">
+							<div class="select-address__list select-address-js">
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Киров">
+									<span class="select-address__name">Киров</span>
+								</label>
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Сыктывкар">
+									<span class="select-address__name">Сыктывкар</span>
+								</label>
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Вятские поляны">
+									<span class="select-address__name">Вятские поляны</span>
+								</label>
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Омутнинск">
+									<span class="select-address__name">Омутнинск</span>
+								</label>
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Кирово-Чепецк">
+									<span class="select-address__name">Кирово-Чепецк</span>
+								</label>
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Уфа">
+									<span class="select-address__name">Уфа</span>
+								</label>
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Шахунья">
+									<span class="select-address__name">Шахунья</span>
+								</label>
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Верхняя Салда">
+									<span class="select-address__name">Верхняя Салда</span>
+								</label>
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Печера">
+									<span class="select-address__name">Печера</span>
+								</label>
+
+								<label class="select-address__item">
+									<input type="radio" name="city" value="Лабытнанги">
+									<span class="select-address__name">Лабытнанги</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="contact-map">
+				<div class="contact-map__init" id="contact-map" data-map-center="[50.447472, 30.503022]"></div>
+				<div class="container contact-map__container">
+					<div class="contact-map__address">
+						<div class="contact-map__city">Киров</div>
+						<div class="contact-map__list">
+							<div class="contact-map__item">
+								<a class="contact-map__geo" data-id="1">г. Киров, ТЦ «Мегадом»<br> ул. Блюхера, 39, корпус «B», цокольный этаж<br> т. 8 (963) 000-94-10</a>
+							</div>
+							<div class="contact-map__item">
+								<a class="contact-map__geo" data-id="2">г. Киров, ТЦ «Мебель»<br> ул. Герцена, 88, 2 этаж<br> т. 8 (963) 000-94-11</a>
+							</div>
+							<div class="contact-map__item">
+								<a class="contact-map__geo" data-id="3">г. Киров, Мебельная фабрика «Вираж»<br> пер. Базовый, 11 а. Основное производство<br> т. 8 (8332) 704-289<br>Для оптовиков</a>
+							</div>
+						</div>
+						<div class="contact-map__list-test"></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>	
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+				<a class="footer__logo-footer logo-footer" href="index.html">
+					<img src="img/vendor/logo-footer.png" alt="">
+				</a>
+				<div class="footer__menu">
+					<ul class="menu-footer">
+						<li class="menu-footer__item"><a href="kitchen.html" class="menu-footer__link">Кухни</a></li>
+						<li class="menu-footer__item"><a href="case-compartment.html" class="menu-footer__link">Шкафы-купе</a></li>
+						<li class="menu-footer__item"><a href="facades-mdf.html" class="menu-footer__link">Фасады МДФ</a></li>
+						<li class="menu-footer__item"><a href="mirrors-production.html" class="menu-footer__link">Стекольно-зеркальная продукция</a></li>
+					</ul>
+					<ul class="menu-footer">	
+						<li class="menu-footer__item"><a href="about.html" class="menu-footer__link">О фабрике</a></li>
+						<li class="menu-footer__item"><a href="our-works.html" class="menu-footer__link">Наши работы</a></li>
+						<li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link">Отзывы</a></li>
+					</ul>
+					<ul class="menu-footer">	
+						<li class="menu-footer__item"><a href="contacts.html" class="menu-footer__link">Контакты</a></li>
+						<li class="menu-footer__item"><a href="#" class="menu-footer__link">Сотрудничество</a></li>
+					</ul>
+				</div>
+				<div class="footer__social social">
+					<a class="social__link social__link--inst" href="#">
+						<span class="visually-hidden">Инстаграм</span>
+					</a>
+					<a class="social__link social__link--vk" href="#">
+						<span class="visually-hidden">Вконтакте</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="fixed-panel">		
+		<a href="#" class="btn btn--calc">Рассчитать стоимость кухни</a>
+	</div>
+	
+    <script src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=10f4c8ee-11c9-47ee-be37-675358036731" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function(){ 
+
+			var groupsArray = {
+			"Киров": [
+				{
+					setCenterMap: [58.5850,49.6002],
+					setCenterMapMobile: [58.5950,49.6402]
+				},
+				{
+					id: 1,
+					name: 'г. Киров, ТЦ «Мегадом» <br>ул. Блюхера, 39, корпус «B», цокольный этаж <br> т. 8 (963) 000-94-10',
+					center: [58.5839, 49.6772]
+				},
+				{
+					id: 2,
+					name: 'г. Киров, ТЦ «Мебель» <br>ул. Герцена, 88, 2 этаж <br>т. 8 (963) 000-94-11',
+					center: [58.5986, 49.6430]
+				},
+				{
+					id: 3,
+					name: 'г. Киров, Мебельная фабрика «Вираж» <br>пер. Базовый, 11 а. Основное производство <br>т. 8 (8332) 704-289 Для оптовиков',
+					center: [58.5643, 49.5894]
+				}
+				
+			],
+			"Сыктывкар": [
+				{
+					setCenterMap: [50.447472, 30.503022],
+					setCenterMapMobile: [58.5950,49.6402]
+				},
+				{
+					id: 1,
+					name: 'г. Киров, ТЦ «Мегадом» <br>ул. Блюхера, 39, корпус «B», цокольный этаж <br> т. 8 (963) 000-94-10',
+					center: [50.426472, 30.563022]
+				},
+				{
+					id: 2,
+					name: 'г. Киров, ТЦ «Мебель» <br>ул. Герцена, 88, 2 этаж <br>т. 8 (963) 000-94-11',
+					center: [50.45351, 30.516489]
+				}
+			],
+			"Вятские поляны": [
+				{
+					setCenterMap: [50.447472, 30.503022],
+					setCenterMapMobile: [58.5950,49.6402]
+				},
+				{
+					id: 1,
+					name: 'г. Киров, ТЦ «Мегадом» <br>ул. Блюхера, 39, корпус «B», цокольный этаж <br> т. 8 (963) 000-94-10',	
+					center: [50.426472, 30.543022]
+				},
+				{
+					id: 2,
+					name: 'г. Киров, ТЦ «Мебель» <br>ул. Герцена, 88, 2 этаж <br>т. 8 (963) 000-94-11',
+					center: [50.45351, 30.513489]
+				},
+				{
+					id: 3,
+					name: 'г. Киров, Мебельная фабрика «Вираж» <br>пер. Базовый, 11 а. Основное производство <br>т. 8 (8332) 704-289 Для оптовиков',
+					center: [50.454433, 30.504874]
+				}
+			]
+				
+		};
+
+			window.createMap(groupsArray);
+		});
+		
+	</script>
+</body>
+</html>

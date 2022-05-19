@@ -1,0 +1,52 @@
+.btn {
+    display: inline-block;
+    background-color: #b59ec9;
+    color: #fff;
+    font-size: 16px;
+    line-height: 29px;
+    font-family: 'PT Sans','Arial';
+    text-decoration: none;
+    padding: 8px 40px;
+    border-radius: 50px;
+    border: none;
+    transition: background-color .2s;
+    cursor: pointer;
+
+    &:hover {
+    	background-color: rgba(141,102,175,1);
+    }
+
+    &:active,
+    &:focus {
+        outline: 0;
+        background-color: #7E6792;
+    }
+
+
+    &--all-projects {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    @media(max-width: 992px) {
+        &--calc {
+            color: transparent;
+            font-size: 0;
+            line-height: 0;
+             padding: 28px;
+             background-image: url("../img/ico-calc.svg");
+             background-repeat: no-repeat;
+             background-position: center;
+        }
+    }
+
+    @media(max-width: 449px) {
+        &--two-line {
+            line-height: 19px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+    }
+
+}

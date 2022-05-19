@@ -1,0 +1,8 @@
+.nav-catalog {
+	background-color: #f1f2f6;
+	position: relative;
+	
+	@media(max-width: 992px) {
+		display: none;
+	}
+}

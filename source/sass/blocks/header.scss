@@ -1,0 +1,32 @@
+.header {
+	background-color: #fff;
+	padding: 16px 0;
+	
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__btn {
+		margin-top: 17px;
+	}
+
+	&__search {
+		text-align: right;
+	}
+
+	@media(max-width: 992px) {
+
+		& {
+			padding: 8px 0;
+		}
+
+		&__btn {
+			font-size: 14px;
+			padding: 3px 22px;
+			margin-top: 0;
+		}
+	}
+	
+}

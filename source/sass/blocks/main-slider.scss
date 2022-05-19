@@ -1,0 +1,101 @@
+.main-slider {
+	position: relative;
+	z-index: 1;
+	
+	&__container {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	&__btn {
+		position: absolute;
+		right: 60px;
+		bottom: 74px;
+	}
+
+	.slick-dots {
+		@include list();
+		position: absolute;
+		bottom: 23px;
+		left: 0;
+		right: 0;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin: 0 7px;
+		}
+
+		button {
+			border: none;
+			color: transparent;
+			font-size: 0;
+			padding: 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 50px;
+			background-color: rgba(130,130,130,0.5);
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.slick-active button {
+			background-color: rgba(130,130,130,1);
+		}
+	}
+	
+	&__item {
+		position: relative;
+	}
+
+	&__item img {
+		margin: 0 auto;
+	}
+
+	&__item:focus {
+		outline: none;
+	}
+
+	@media(max-width: 992px) {
+		
+		.slick-dots {
+			bottom: 80px;
+		}
+
+		.slick-dots li button {
+			width: 8px;
+			height: 8px;
+		}
+	
+		&__container {
+			text-align: center;
+		}
+
+		&__container,
+		&__btn {
+			position: relative;
+		}
+
+		&__btn {
+			margin-top: 20px;
+			bottom: auto;
+			right: auto;
+		}
+
+	}
+
+	@media(max-width: 767px) {
+		.slick-dots {
+			bottom: 70px;
+		}
+	}
+
+	
+
+}

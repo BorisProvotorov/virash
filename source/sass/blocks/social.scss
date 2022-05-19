@@ -1,0 +1,22 @@
+.social {
+	
+	&__link {
+		display: inline-block;
+		vertical-align: middle;
+		width: 40px;
+		height: 40px;
+		position: relative;
+
+		&--inst {
+			background-image: url("../img/ico-insta.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		&--vk {
+			background-image: url("../img/ico-vk.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}	
+}

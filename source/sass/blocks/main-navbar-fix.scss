@@ -1,0 +1,19 @@
+.main-navbar-fix {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	transition: all .5s;
+	transition-delay: 	.2s;
+	
+	&.off {
+		opacity: 0;
+		visibility: hidden;
+		/* transform: translate(0, -100%); */
+	}
+
+	@media (max-width: 992px) {
+		position: fixed;
+	}
+}

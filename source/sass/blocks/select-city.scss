@@ -1,0 +1,86 @@
+.select-city {
+	position: relative;
+	width: 215px;
+
+	&__current {
+		font-size: 16px;
+		line-height: 18px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		cursor: pointer;
+	}
+
+	&__current-name {
+		background-image: url("../img/ico-arrow-down-think.svg");
+		background-repeat: no-repeat;
+		background-position: right center;
+		padding-right: 20px;
+	}
+	 
+	&__list {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		top: calc(100% + 2px);
+		background-color: #F1F2F6;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		left: 0;
+		width: 180px;
+		z-index: 1;
+		
+		@include list();
+		
+		&.open {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	
+
+	&__name {
+		font-size: 16px;
+		padding-left: 12px;
+		padding-right: 12px;
+		margin-left: 2px;
+		margin-right: 2px;
+		cursor: pointer;
+		margin-bottom: 6px;
+		
+		&:hover {
+			background-color: #FFF;
+		}
+	}
+
+
+	@media(max-width: 992px) {
+
+		& {
+			background-image: url(../img/ico-map.svg);
+			background-repeat: no-repeat;
+			background-position: left 7px;
+			padding-left: 18px;
+		}
+		
+		&__label {
+			width: 16px;
+			height: 19px;
+			font-size: 0;
+			vertical-align: middle;
+		}	
+
+		&__current {
+			font-size: 12px;
+			background-position: right 16px;
+			padding-right: 14px;
+			padding-top: 5px;
+			padding-bottom: 13px;
+		}
+
+		&__current-name {
+			position: relative;
+			top: 4px;
+		}
+	}
+
+}

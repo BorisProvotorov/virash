@@ -1,0 +1,46 @@
+.catalog-grid {
+	overflow: hidden;
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -10px -9px 0 -9px;
+	}
+
+	&__col {
+		width: 25%;
+		padding: 10px 10px 10px 10px;
+	}
+
+	&__btn-center {
+		padding-top: 40px;
+	}
+
+	&--3-col &__col {
+		width: 33.33%;
+	}
+
+	@media (max-width: 992px) {
+		&--3-col &__col {
+			width: 50%;
+		}
+	}
+
+	@media(max-width: 767px){
+		&__col {
+			width: 50%;
+		}
+	}
+
+	@media(max-width: 479px) {
+		&__col {
+			width: 100%;
+		}
+	}
+
+	@media(max-width: 320px) {
+		&--3-col &__col {
+			width: 100%;
+		}
+	}
+}

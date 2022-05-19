@@ -1,0 +1,29 @@
+.catalog-item {
+
+	&__img {
+		text-align: center;
+		overflow: hidden;
+		height: 223px;
+
+		a {
+			display: block;
+			height: 100%;
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		margin-top: 10px;
+		padding-bottom: 18px;
+	}
+
+
+	&--vitraz &__img {
+		background-color: #F1F2F6; 
+	}
+}

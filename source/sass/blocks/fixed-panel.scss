@@ -1,0 +1,10 @@
+.fixed-panel {
+	position: fixed;
+	bottom: 31px;
+	right: 0;
+	z-index: 2;
+	
+	@media(max-width: 992px){
+		right: 16px;
+	}
+}

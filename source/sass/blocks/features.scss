@@ -1,0 +1,179 @@
+.features {
+	position: relative;
+
+	&__row {
+		position: relative;
+	}
+
+	&__container {
+		position: relative;
+	}
+
+
+	&__arrow-down {
+		position: absolute;
+		left: 25%;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		background-image: url("../img/vendor/logo-decor.png");
+		width: 428px;
+		height: 286px;
+		top: 56px;
+		right: 79px;
+		z-index: -1;
+	}
+	
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-left: 80px;
+		max-width: 1170px;
+	}
+
+	&__col {
+		display: inline-block;
+		vertical-align: top;
+		max-width: 320px;
+		padding: 0 15px 30px 15px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	&__title {
+		text-align: center;
+		padding-top: 84px;
+		padding-bottom: 84px;
+	}
+
+	&__name {
+		font-size: 20px;
+		font-weight: 700;
+		color: #4f4f4f;
+		text-transform: uppercase;
+		margin-bottom: 24px;
+	}
+
+	&__ico {
+		width: 105px;
+		height: 105px;
+		border-radius: 100px;
+		position: relative;
+		margin-bottom: 24px;
+		display: inline-block;
+	}
+
+	&__ico img {
+		position: absolute;
+	}
+
+	&__col:nth-child(1) &__ico {
+		background-color: #DDEFE6;
+
+		img {
+			top: 19px;
+			left: 0;
+		}
+	}
+
+	&__col:nth-child(2) &__ico {
+		background-color: #F5D6C9;
+
+		img {
+			top: 10px;
+			right: 0;
+		}
+	}
+
+	&__col:nth-child(3) &__ico {
+		background-color: #F1F2F6;
+
+		img {
+			top: 13px;
+			right: -8px;
+		}
+	}
+
+	&__col:nth-child(4) &__ico {
+		background-color: #F1F2F6;
+
+		img {
+			top: 8px;
+			right: -10px;
+		}
+	}
+
+	&__col:nth-child(5) &__ico {
+		background-color: #DDEFE6;
+
+		img {
+			top: 10px;
+			right: -15px;
+		}
+	}
+
+	&__col:nth-child(6) &__ico {
+		background-color: #F5D6C9;
+
+		img {
+			top: 16px;
+			right: 2px;
+		}
+	}
+
+	@media(max-width: 992px) {
+		&__list {
+			padding-left: 0;
+			max-width: 750px;
+			margin: 0 auto;
+		}	
+
+		&__name {
+			font-size: 20px;
+			margin-bottom: 12px;
+		}
+
+
+		&__arrow-down {
+			left: 23.9%;
+		}
+
+	}
+
+	@media(max-width: 767px) {
+
+		&__list {
+			padding-bottom: 35px;
+			justify-content: center;
+		}
+
+		&__col {
+			max-width: 100%;
+			margin-bottom: 	5px;
+		}
+
+		&__ico {
+			width: 80px;
+			height: 80px;
+		}
+
+		&__ico img {
+			width: 61px;
+		}
+
+		&__arrow-down {
+			left: 23.4%;
+		}
+	}
+
+
+	@media(max-width: 320px) {
+		&__arrow-down {
+			left: 22.4%;
+		}
+	}
+
+}

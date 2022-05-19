@@ -1,0 +1,30 @@
+.btn-center {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 80px;
+	position: relative;
+	z-index: 2;
+
+	//Отступы для страницы стекольно-зеркальная продукция
+	&--mirror-production {
+		padding-top: 80px;
+		padding-bottom: 30px;
+	}
+
+	//Если втавтяем внутрь блока
+	&--inset {
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+	
+	&__btn {
+		width: 214px;
+        display: inline-block;	
+	}
+
+	@media(max-width: 992px){
+		&__btn {
+			width: 260px;
+		}
+	}
+}

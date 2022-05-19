@@ -1,0 +1,119 @@
+.select-address {
+
+	background-color: #DDEFE6;
+	font-family: sans-serif;
+
+	&__row {
+		display: inline-block;
+		width: 100%;
+		align-items: center;
+		vertical-align: middle;
+	}
+	
+	label {
+		display: block;
+	}
+	
+	&__title {
+		float: left;
+	}
+
+	&__slider {
+		overflow: hidden;
+	}
+
+	&__item {
+		text-align: center;
+	}
+	
+	&__item input[type='radio'] {
+		position: absolute;
+		opacity: 0;
+	}
+
+	&__item input[type='radio']:checked + &__name,	
+	&__item input[type='radio']:focus + &__name {
+		background-color: #F5D6C9;
+	}
+
+	&__name {
+		display: block;
+		padding: 7px 32px;
+		cursor: pointer;
+	}
+	
+	&__title {
+		flex-shrink: 0;
+		padding: 7px 24px 7px 0;
+		background-color: #DDEFE6;
+		width: 200px;
+	}
+	
+	&__slider {
+		overflow: hidden;
+		padding: 0 44px 0 0;
+	}
+
+	.slick-arrow {
+		position: absolute;
+	}
+
+	.slick-prev {
+		right: -44px;
+		visibility: hidden;
+	}
+
+	.slick-next {
+		right: -44px;
+	}
+
+	.slick-prev,
+	.slick-next {		
+		color: transparent;
+		background-color: #DDEFE6;
+		background-image: url("../img/ico-arrow-right.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		top: 0px;
+		bottom: 0px;
+		font-size: 0;
+		padding: 20px;
+		transition: all .2s;
+		cursor: pointer;
+		border: none;
+	}
+
+	.slick-prev {
+		transform: rotate(180deg);
+		background-position: center;
+	}
+
+
+	@media(max-width: 767px) {
+		&__title {
+			display: none;
+		}
+
+		&__name {
+			padding-top: 11px;
+			padding-bottom: 11px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		&__container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.slick-arrow {
+			visibility: hidden;
+			padding: 0;
+		}
+
+		&__slider {
+			padding: 0;
+		}
+	}
+
+}

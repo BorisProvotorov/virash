@@ -1,0 +1,28 @@
+.contacts {
+	
+	&__top {
+
+	}
+
+	&__item {
+		display: block;
+		text-decoration: none;
+		color: #4f4f4f;
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__bottom {
+		overflow: hidden;
+		margin-left: -10px;
+	}
+
+
+	@media (max-width: 992px) {
+		display: none;
+	}
+
+}

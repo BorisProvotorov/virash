@@ -1,0 +1,58 @@
+.our-works {
+	display: flex;
+	
+	&__nav {
+		flex-shrink: 0;
+		width: 324px;
+	}
+
+
+	&__list {
+		@include list();
+	}
+
+	&__item {
+		max-width: 254px;
+	}
+
+	&__link {
+		display: block;
+		padding: 8px 20px;
+		text-decoration: none;
+		color: $black;
+	}
+
+	&__link--active {
+		background-color: #DDEFE6;
+	}
+
+	@media (max-width: 992px) {
+		&__nav {
+			width: 300px;
+		}
+	}
+
+	@media (max-width: 767px) {
+
+		& {
+			flex-direction: column;	
+		}
+
+		&__nav {
+			width: auto;
+			margin-bottom: 32px;
+		}
+
+		&__item {
+			max-width: 100%;
+		}
+	}
+
+
+	@media (max-width: 479px) {
+		& {
+			margin: 0 -15px;
+		}
+	}
+
+}

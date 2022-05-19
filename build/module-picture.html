@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вираж</title>
+    <link rel="stylesheet" href="js/vendor/slick/slick.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<!-- Вертикальная сетка Begin -->
+	<div class="vertical-line-grid">
+		<div class="vertical-line-grid__inner"></div>
+	</div>
+	<!-- Вертикальная сетка End -->
+	<nav class="main-navbar-fix">
+		<!-- top-line Begin -->
+		<div class="top-line">
+			<div class="container top-line__container">
+				<div class="top-line__flex">
+
+					<div class="select-city">
+						<div class="select-city__current">
+							<span class="select-city__label">Ваш город:</span>
+							<span class="select-city__current-name">Киров</span>
+						</div>
+						<ul class="select-city__list">
+							<li class="select-city__name">Киров</li>
+							<li class="select-city__name">Сыктывкар</li>
+							<li class="select-city__name">Вятские поляны</li>
+							<li class="select-city__name">Омутнинск</li>
+							<li class="select-city__name">Кирово-Чепецк</li>
+							<li class="select-city__name">Уфа</li>
+							<li class="select-city__name">Шахунья</li>
+							<li class="select-city__name">Верхняя Салда </li>
+							<li class="select-city__name">Печера</li>
+							<li class="select-city__name">Лабытнанги</li>
+						</ul>
+					</div>
+					
+					<ul class="menu-top">
+						<li class="menu-top__item"><a href="index.html" class="menu-top__link">Главная</a></li>
+						<li class="menu-top__item"><a href="about.html" class="menu-top__link">О фабрике</a></li>
+						<li class="menu-top__item"><a href="reviews.html" class="menu-top__link">Отзывы</a></li>
+						<li class="menu-top__item"><a href="our-works.html" class="menu-top__link">Наши работы</a></li>
+						<li class="menu-top__item"><a href="contacts.html" class="menu-top__link">Контакты</a></li>
+					</ul>
+					<div class="top-line__right">
+						<a class="search-show"></a>
+						<div class="burger">
+							<div class="burger__line"></div>
+						</div>
+					</div>
+					<div class="top-line__search">
+						<form class="search search--mobile">
+							<a class="search__hide"></a>
+							<input class="search__input" type="text" placeholder="Поиск">						
+						</form>
+					</div>	
+				</div>
+			</div>
+
+			<div class="top-line__mobile-nav">
+				<ul class="mobile-menu mobile-menu--main">
+					<li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Главная</a></li>
+					<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О фабрике</a></li>
+					<li class="mobile-menu__item"><a href="reviews.html" class="mobile-menu__link">Отзывы</a></li>
+					<li class="mobile-menu__item"><a href="our-works.html" class="mobile-menu__link">Наши работы</a></li>
+					<li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="mobile-menu mobile-menu--catalog">
+					<li class="mobile-menu__item"><a href="kitchen.html" class="mobile-menu__link">Кухни</a></li>
+					<li class="mobile-menu__item"><a href="case-compartment.html" class="mobile-menu__link">Шкафы-купе</a></li>
+					<li class="mobile-menu__item mobile-menu__item--has-child">
+						<div class="mobile-menu__sub-item">
+							<a href="mirrors-production.html" class="mobile-menu__link">Стекольно-зеркальная продукция</a>
+						</div>
+						<ul class="mobile-menu__sub">
+							<li class="mobile-menu__sub-item"><a href="module-picture.html" class="mobile-menu__sub-link">Модульные картины</a></li>
+							<li class="mobile-menu__sub-item"><a href="doors-case-compartment.html" class="mobile-menu__sub-link">Двери для шкафа-купе</a></li>
+							<li class="mobile-menu__sub-item"><a href="kitchen-panels.html" class="mobile-menu__sub-link">Кухонные фартуки</a></li>
+							<li class="mobile-menu__sub-item"><a href="mirrors.html" class="mobile-menu__sub-link">Зеркала</a></li>
+						</ul>
+					</li>
+					<li class="mobile-menu__item mobile-menu__item--has-child">
+						<div class="mobile-menu__sub-item">
+							<a href="facades-mdf.html" class="mobile-menu__link">Фасады МДФ</a>
+						</div>		
+						<ul class="mobile-menu__sub">
+							<li class="mobile-menu__sub-item"><a href="milling-mdf.html" class="mobile-menu__sub-link">Виды фрезеровок</a></li>
+							<li class="mobile-menu__sub-item"><a href="pvh.html" class="mobile-menu__sub-link">Пленки ПВХ</a></li>
+							<li class="mobile-menu__sub-item"><a href="facades-patina.html" class="mobile-menu__sub-link">Фасады из патины</a></li>
+							<li class="mobile-menu__sub-item"><a href="facades-color.html" class="mobile-menu__sub-link">Крашеные фасады</a></li>
+							<li class="mobile-menu__sub-item"><a href="documents.html" class="mobile-menu__sub-link">Документация</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- top-line End -->
+		
+		<!-- header Begin -->
+		<div class="header">
+			<div class="container">
+				<div class="header__flex">
+					<div class="contacts">
+						<div class="contacts__top">
+							<a class="contacts__item" href="tel:8332704289">8 (8332) 704-289</a>
+							<a class="contacts__item" href="mailto:support@myvirazh.ru">support@myvirazh.ru</a>
+						</div>
+						<div class="contacts__bottom social">
+							<a class="social__link social__link--inst" href="#">
+								<span class="visually-hidden">Инстаграм</span>
+							</a>
+							<a class="social__link social__link--vk" href="#">
+								<span class="visually-hidden">Вконтакте</span>
+							</a>
+						</div>
+					</div>
+					<a class="logo" href="index.html">
+						<img class="logo__img" src="img/vendor/logo.png" alt="">
+					</a>
+					<div class="header__search">
+						<form class="search">
+							<input class="search__input" type="text">
+							<input class="search__submit" type="submit">						
+						</form>
+						<a class="btn header__btn" href="#nav-converce">Кухня в один клик!</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- header End -->
+
+		<!-- Меню каталога Begin -->
+		<div class="nav-catalog">
+			<div class="container">
+				<div class="inline-center">
+					<ul class="menu-catalog">
+						<li class="menu-catalog__item"><a href="kitchen.html" class="menu-catalog__link">Кухни</a></li>
+						<li class="menu-catalog__item"><a href="case-compartment.html" class="menu-catalog__link">Шкафы-купе</a></li>
+						<li class="menu-catalog__item">
+							<a href="mirrors-production.html" class="menu-catalog__link menu-catalog__link--has-child">Стекольно-зеркальная продукция</a>
+							<ul class="menu-catalog__sub">
+								<li class="menu-catalog__sub-item"><a href="module-picture.html" class="menu-catalog__sub-link">Модульные картины</a></li>
+								<li class="menu-catalog__sub-item"><a href="doors-case-compartment.html" class="menu-catalog__sub-link">Двери для шкафа-купе</a></li>
+								<li class="menu-catalog__sub-item"><a href="kitchen-panels.html" class="menu-catalog__sub-link">Кухонные фартуки</a></li>
+								<li class="menu-catalog__sub-item"><a href="mirrors.html" class="menu-catalog__sub-link">Зеркала</a></li>
+							</ul>
+						</li>
+						<li class="menu-catalog__item">
+							<a href="facades-mdf.html" class="menu-catalog__link menu-catalog__link--has-child">Фасады МДФ</a>
+							<ul class="menu-catalog__sub">
+								<li class="menu-catalog__sub-item"><a href="milling-mdf.html" class="menu-catalog__sub-link">Виды фрезеровок</a></li>
+								<li class="menu-catalog__sub-item"><a href="pvh.html" class="menu-catalog__sub-link">Пленки ПВХ</a></li>
+								<li class="menu-catalog__sub-item"><a href="facades-patina.html" class="menu-catalog__sub-link">Фасады из патины</a></li>
+								<li class="menu-catalog__sub-item"><a href="facades-color.html" class="menu-catalog__sub-link">Крашеные фасады</a></li>
+								<li class="menu-catalog__sub-item"><a href="documents.html" class="menu-catalog__sub-link">Документация</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Меню каталога End -->
+	</nav>
+
+	<main class="main-container">
+		<div class="main-container__inner">
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="mirrors-production.html">Стекольно-зеркальная продукция</a></li>
+						<li class="breadcrumbs__item"><a class="active">Модульные картины</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="text-section">
+				<div class="container">
+					<h1 class="h1">Модульные картины</h1>
+				</div>
+			</div>
+
+			<div class="product-info product-info--color">
+				<div class="container">
+					<div class="product-info__item">
+						<!-- Декоративные элементы Begin -->
+							<span class="product-info__line-pink"></span>
+							<span class="product-info__line-accent"></span>
+						<!-- Декоративные элементы End -->	
+
+						<div class="product-info__view">
+							<img src="img/assets/works/module-picture/product-page-1.png" alt="">
+						</div>
+						<div class="product-info__text">
+							<div class="title product-info__title">Модульные картины</div>
+							<p>Сегментированные современные художественные картины это один из самых популярных и актуальных аксессуаров, которые используются для украшения интерьера очень часто. Таким эстетичным и изумительно красивым полотном можно украсить буквально любые стены, как в квартире либо коттедже, так и в любом офисе. Эта картина может иметь рисунок самого различного жанра, в том числе и городского шикарного пейзажа.</p>
+						</div>	
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<div class="post-quote post-quote--no-decor">
+			<div class="container">
+				<div class="post-quote__inner">
+					<div class="arrow-down post-quote__arrow-down arrow-down--pos-50"></div>
+					<div class="title post-quote__title">Что такое сегментная картина</div>
+					<div class="post-quote__text">
+						<p>Сегментные замечательные картины, которые еще часто именуются модульными, состоят из отдельных специальных частей. Это может быть диптих, состоящий из двух частей, триптих из трех частей одной картины и полиптих из ряда картин, объеденных общим замыслом. Главное решение для этих трех видов картин это отдельные модульные изображения объединенные меж собой единой идеей. Сегодня такие картины будут самым актуальным и модным типом украшения в изобразительном современном интерьерном искусстве, эти изделия пользуются достаточно большим и растущим спросом.</p>
+
+<p>Части, то есть сегменты данного изображения картины будут дополнять друг друга и могут иметь самую различную общую форму и разные размеры. Такие сегментированные картины действительно уникальные, где сегменты могут располагаться произвольно друг относительно друга, что сделает интерьер оригинальнее и интереснее. Изумительные и стильные модульные картины будут идеальным художественным решением для любого типа интерьера. Эти картины будут добавлять в интерьер уникальность, особенный изящный шарм и художественные замечательные черты. Сегментированные уникальные картины могут быть как центральным интерьерным элементом, так и дополняющим другие детали интерьера.</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="post-quote post-quote--no-decor post-quote--white">
+			<div class="container">
+				<div class="post-quote__inner">
+					<div class="arrow-down post-quote__arrow-down"></div>
+					<div class="title post-quote__title">Аспекты изготовления картины</div>
+					<div class="post-quote__text">
+						<p>Для изготовления сегментированной современной картины используются обычно материалы самого высокого качества. Главная основа данной картины изготавливается обычно из холста, который может быть сделан изо льна или же хлопка. А для покрытия и изготовления самого рисунка могут использоваться пигментные специальные чернила, фотопечать, художественный лак и другие. Если такое общее покрытие было сделано правильно и эффективно, то сегментированные картины будут иметь отличную защиту от механического различного действия и от ультрафиолета. Такие картины давно уже стали традиционным и изумительным способом украшения любого интерьера.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="btn-center">
+				<a href="module-picture-catalog.html" class="btn btn--all-projects btn-center__btn">Смотреть наши проекты</a>
+			</div>
+		</div>
+		<div class="converce" id="nav-converce">
+			<div class="container">
+				<div class="converce__row">
+					<div class="converce__head">
+						<div class="converce__title">Получите <span class="nowrap">дизайн-проект</span> вашей будущей мебели в один клик!</div>
+						<div class="converce__sub-title">Заполните форму и ждите звонка от  нашего сотрудника</div>
+					</div>	
+					<div class="converce__form">
+						<div class="converce__form-title">Укажите, как с вами связаться</div>
+						<form action="feedback-window.html">
+							<div class="form-row">
+								<div class="form-field form-field--success">
+									<input class="form-control" type="text" name="user_name" placeholder="Имя">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-field form-field--error">
+									<input class="form-control" type="text" name="user_city" placeholder="Город">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-field">
+									<input class="form-control" type="text" name="user_phone" placeholder="Телефон">
+								</div>
+							</div>
+							<button class="btn converce__form-submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+				<a class="footer__logo-footer logo-footer" href="index.html">
+					<img src="img/vendor/logo-footer.png" alt="">
+				</a>
+				<div class="footer__menu">
+					<ul class="menu-footer">
+						<li class="menu-footer__item"><a href="kitchen.html" class="menu-footer__link">Кухни</a></li>
+						<li class="menu-footer__item"><a href="case-compartment.html" class="menu-footer__link">Шкафы-купе</a></li>
+						<li class="menu-footer__item"><a href="facades-mdf.html" class="menu-footer__link">Фасады МДФ</a></li>
+						<li class="menu-footer__item"><a href="mirrors-production.html" class="menu-footer__link">Стекольно-зеркальная продукция</a></li>
+					</ul>
+					<ul class="menu-footer">	
+						<li class="menu-footer__item"><a href="about.html" class="menu-footer__link">О фабрике</a></li>
+						<li class="menu-footer__item"><a href="our-works.html" class="menu-footer__link">Наши работы</a></li>
+						<li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link">Отзывы</a></li>
+					</ul>
+					<ul class="menu-footer">	
+						<li class="menu-footer__item"><a href="contacts.html" class="menu-footer__link">Контакты</a></li>
+						<li class="menu-footer__item"><a href="#" class="menu-footer__link">Сотрудничество</a></li>
+					</ul>
+				</div>
+				<div class="footer__social social">
+					<a class="social__link social__link--inst" href="#">
+						<span class="visually-hidden">Инстаграм</span>
+					</a>
+					<a class="social__link social__link--vk" href="#">
+						<span class="visually-hidden">Вконтакте</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="fixed-panel">		
+		<a href="#" class="btn btn--calc">Рассчитать стоимость кухни</a>
+	</div>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

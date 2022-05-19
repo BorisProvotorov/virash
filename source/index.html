@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виражок</title>
+    <link rel="stylesheet" href="js/vendor/slick/slick.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script href="index.js"></script>
+</head>
+<body>
+	<!-- Вертикальная сетка Begin -->
+	<div class="vertical-line-grid">
+		<div class="vertical-line-grid__inner"></div>
+	</div>
+	<!-- Вертикальная сетка End -->
+	<nav class="main-navbar-fix">
+		<!-- top-line Begin -->
+		<div class="top-line">
+			<div class="container top-line__container">
+				<div class="top-line__flex">
+
+					<div class="select-city">
+						<div class="select-city__current">
+							<span class="select-city__label">Ваш город:</span>
+							<span class="select-city__current-name">Киров</span>
+						</div>
+						<ul class="select-city__list">
+							<li class="select-city__name">Киров</li>
+							<li class="select-city__name">Сыктывкар</li>
+							<li class="select-city__name">Вятские поляны</li>
+							<li class="select-city__name">Омутнинск</li>
+							<li class="select-city__name">Кирово-Чепецк</li>
+							<li class="select-city__name">Уфа</li>
+							<li class="select-city__name">Шахунья</li>
+							<li class="select-city__name">Верхняя Салда </li>
+							<li class="select-city__name">Печера</li>
+							<li class="select-city__name">Лабытнанги</li>
+						</ul>
+					</div>
+					
+					<ul class="menu-top">
+						<li class="menu-top__item"><a href="index.html" class="menu-top__link">Главная</a></li>
+						<li class="menu-top__item"><a href="about.html" class="menu-top__link">О фабрике</a></li>
+						<li class="menu-top__item"><a href="reviews.html" class="menu-top__link">Отзывы</a></li>
+						<li class="menu-top__item"><a href="our-works.html" class="menu-top__link">Наши работы</a></li>
+						<li class="menu-top__item"><a href="contacts.html" class="menu-top__link">Контакты</a></li>
+					</ul>
+					<div class="top-line__right">
+						<a class="search-show"></a>
+						<div class="burger">
+							<div class="burger__line"></div>
+						</div>
+					</div>
+					<div class="top-line__search">
+						<form class="search search--mobile">
+							<a class="search__hide"></a>
+							<input class="search__input" type="text" placeholder="Поиск">						
+						</form>
+					</div>	
+				</div>
+			</div>
+
+			<div class="top-line__mobile-nav">
+				<ul class="mobile-menu mobile-menu--main">
+					<li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Главная</a></li>
+					<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О фабрике</a></li>
+					<li class="mobile-menu__item"><a href="reviews.html" class="mobile-menu__link">Отзывы</a></li>
+					<li class="mobile-menu__item"><a href="our-works.html" class="mobile-menu__link">Наши работы</a></li>
+					<li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="mobile-menu mobile-menu--catalog">
+					<li class="mobile-menu__item"><a href="kitchen.html" class="mobile-menu__link">Кухни</a></li>
+					<li class="mobile-menu__item"><a href="case-compartment.html" class="mobile-menu__link">Шкафы-купе</a></li>
+					<li class="mobile-menu__item mobile-menu__item--has-child">
+						<div class="mobile-menu__sub-item">
+							<a href="mirrors-production.html" class="mobile-menu__link">Стекольно-зеркальная продукция</a>
+							<button class="mobile-menu__arrow"></button>
+						</div>
+						<ul class="mobile-menu__sub">
+							<li class="mobile-menu__sub-item"><a href="module-picture.html" class="mobile-menu__sub-link">Модульные картины</a></li>
+							<li class="mobile-menu__sub-item"><a href="doors-case-compartment.html" class="mobile-menu__sub-link">Двери для шкафа-купе</a></li>
+							<li class="mobile-menu__sub-item"><a href="kitchen-panels.html" class="mobile-menu__sub-link">Кухонные фартуки</a></li>
+							<li class="mobile-menu__sub-item"><a href="mirrors.html" class="mobile-menu__sub-link">Зеркала</a></li>
+						</ul>
+					</li>
+					<li class="mobile-menu__item mobile-menu__item--has-child">
+						<div class="mobile-menu__sub-item">
+							<a href="facades-mdf.html" class="mobile-menu__link">Фасады МДФ</a>
+							<button class="mobile-menu__arrow"></button>
+						</div>		
+						<ul class="mobile-menu__sub">
+							<li class="mobile-menu__sub-item"><a href="milling-mdf.html" class="mobile-menu__sub-link">Виды фрезеровок</a></li>
+							<li class="mobile-menu__sub-item"><a href="pvh.html" class="mobile-menu__sub-link">Пленки ПВХ</a></li>
+							<li class="mobile-menu__sub-item"><a href="facades-patina.html" class="mobile-menu__sub-link">Фасады из патины</a></li>
+							<li class="mobile-menu__sub-item"><a href="facades-color.html" class="mobile-menu__sub-link">Крашеные фасады</a></li>
+							<li class="mobile-menu__sub-item"><a href="documents.html" class="mobile-menu__sub-link">Документация</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- top-line End -->
+		
+		<!-- header Begin -->
+		<div class="header">
+			<div class="container">
+				<div class="header__flex">
+					<div class="contacts">
+						<div class="contacts__top">
+							<a class="contacts__item" href="tel:8332704289">8 (8332) 704-289</a>
+							<a class="contacts__item" href="mailto:support@myvirazh.ru">support@myvirazh.ru</a>
+						</div>
+						<div class="contacts__bottom social">
+							<a class="social__link social__link--inst" href="#">
+								<span class="visually-hidden">Инстаграм</span>
+							</a>
+							<a class="social__link social__link--vk" href="#">
+								<span class="visually-hidden">Вконтакте</span>
+							</a>
+						</div>
+					</div>
+					<a class="logo" href="index.html">
+						<img class="logo__img" src="img/vendor/logo.png" alt="">
+					</a>
+					<div class="header__search">
+						<form class="search">
+							<input class="search__input" type="text">
+							<input class="search__submit" type="submit">						
+						</form>
+						<a class="btn header__btn" href="#nav-converce">Кухня в один клик!</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- header End -->
+
+		<!-- Меню каталога Begin -->
+		<div class="nav-catalog">
+			<div class="container">
+				<div class="inline-center">
+					<ul class="menu-catalog">
+						<li class="menu-catalog__item"><a href="kitchen.html" class="menu-catalog__link">Кухни</a></li>
+						<li class="menu-catalog__item"><a href="case-compartment.html" class="menu-catalog__link">Шкафы-купе</a></li>
+						<li class="menu-catalog__item">
+							<a href="mirrors-production.html" class="menu-catalog__link menu-catalog__link--has-child">Стекольно-зеркальная продукция</a>
+							<ul class="menu-catalog__sub">
+								<li class="menu-catalog__sub-item"><a href="module-picture.html" class="menu-catalog__sub-link">Модульные картины</a></li>
+								<li class="menu-catalog__sub-item"><a href="doors-case-compartment.html" class="menu-catalog__sub-link">Двери для шкафа-купе</a></li>
+								<li class="menu-catalog__sub-item"><a href="kitchen-panels.html" class="menu-catalog__sub-link">Кухонные фартуки</a></li>
+								<li class="menu-catalog__sub-item"><a href="mirrors.html" class="menu-catalog__sub-link">Зеркала</a></li>
+							</ul>
+						</li>
+						<li class="menu-catalog__item">
+							<a href="facades-mdf.html" class="menu-catalog__link menu-catalog__link--has-child">Фасады МДФ</a>
+							<ul class="menu-catalog__sub">
+								<li class="menu-catalog__sub-item"><a href="milling-mdf.html" class="menu-catalog__sub-link">Виды фрезеровок</a></li>
+								<li class="menu-catalog__sub-item"><a href="pvh.html" class="menu-catalog__sub-link">Пленки ПВХ</a></li>
+								<li class="menu-catalog__sub-item"><a href="facades-patina.html" class="menu-catalog__sub-link">Фасады из патины</a></li>
+								<li class="menu-catalog__sub-item"><a href="facades-color.html" class="menu-catalog__sub-link">Крашеные фасады</a></li>
+								<li class="menu-catalog__sub-item"><a href="documents.html" class="menu-catalog__sub-link">Документация</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Меню каталога End -->
+	</nav>
+	
+	<main class="main-container">
+		<div class="main-container__inner">
+			<div class="main-slider">
+				<div class="main-slider__item">
+					<picture>
+						<source media="(max-width: 320px)" srcset="img/assets/slider-main/slide-1-320.jpg">
+						<source media="(max-width: 767px)" srcset="img/assets/slider-main/slide-1-mobile.jpg">
+						<img src="img/assets/slider-main/slide-1.jpg" alt="Рекламный банер">
+					</picture>
+					<div class="main-slider__container container">
+						<a href="#" class="btn main-slider__btn">Заказать обратный звонок</a>
+					</div>
+				</div>
+				<div class="main-slider__item">
+					<div class="main-slider__container container"></div>
+					<picture>
+						<source media="(max-width: 320px)" srcset="img/assets/slider-main/slide-1-320.jpg">
+						<source media="(max-width: 767px)" srcset="img/assets/slider-main/slide-1-mobile.jpg">
+						<img src="img/assets/slider-main/slide-1.jpg" alt="Рекламный банер">
+					</picture>
+					<div class="main-slider__container container">
+						<a href="#" class="btn main-slider__btn">Заказать обратный звонок</a>
+					</div>	
+				</div>
+				<div class="main-slider__item">
+					<div class="main-slider__container container"></div>
+					<picture>
+						<source media="(max-width: 320px)" srcset="img/assets/slider-main/slide-1-320.jpg">
+						<source media="(max-width: 767px)" srcset="img/assets/slider-main/slide-1-mobile.jpg">
+						<img src="img/assets/slider-main/slide-1.jpg" alt="Рекламный банер">
+					</picture>
+					<div class="main-slider__container container">
+						<a href="#" class="btn main-slider__btn">Заказать обратный звонок</a>
+					</div>
+				</div>
+			</div>	
+			<div class="about-company">
+				<div class="container">
+					<div class="about-company__flex">
+						<div class="about-company__img">
+							<img src="img/assets/magazine.png" alt=""> 
+						</div>
+						<div class="about-company__text">
+							<div class="about-company__title">Кухни и шкафы-купе от мебельной фабрики «Вираж»</div>
+							<div class="about-company__descr">
+								<p>Найти мебель, которая отвечает всем запросам - действительно трудно. Постоянно возникают какие-то сложности. То в каталоге фабрики мебели нет кухонного гарнитура или шкафа нужной конфигурации. То изготовитель не может обеспечить надлежащее качество материалов. То нет возможности создать свой собственный функционал и отделку.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="post-quote post-quote--decor-main">
+				<div class="container">
+					<div class="post-quote__inner">
+						<div class="arrow-down post-quote__arrow-down"></div>
+						<div class="title post-quote__title">Мы снимаем все ограничения!</div>
+						<div class="post-quote__text">
+							<p>Фабрика мебели Вираж позволит забыть о любых ограничениях. Наши покупатели получают сразу все, в одном месте, без необходимости тратить время на поиски оптимального предложения в торговых точках или на интернет-площадках. Просто закажите звонок и получите максимум.</p>
+						</div>
+						<div class="post-quote__bottom">	
+							<a class="btn post-quote__btn" href="#">Заказать обратный звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-video">
+				<div class="main-video__left">
+					<div class="arrow-down main-video__arrow-down"></div>
+					<div class="main-video__content">
+						<div class="title main-video__title">Blum</div>
+						<p>Элегантная система выдвижения отличается тонкими боковинами, строгим дизайном и высокой функциональностью. Его лаконичный язык форм получил уже множество международных премий.</p>
+
+						<p>Варианты применения LEGRABOX необычайно разнообразны, его можно использовать в любых конструкциях и помещениях. Система внутренних разделителей AMBIA-LINE идеально подходит к ящикам LEGRABOX, создавая гармоничный внешний вид мебели во всех жилых помещениях</p>
+
+						<div class="main-video__bottom">
+							<a class="btn post-quote__btn" href="#">Заказать обратный звонок</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-video__right video-play-js" data-video="https://www.youtube.com/embed/bVhjL7Jk7hw">
+					<div class="video-iframe-js"></div>
+					<div class="main-video__controls">
+						<a class="main-video__circle-play"></a>
+						<div class="title main-video__title-video">Узнайте обо всех преимуществах системы Blum</div>
+						<a class="main-video__btn-play">
+							<span class="visually-hidden">Видео</span>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="post-utp">
+				<div class="post-utp__item post-utp__item--green">
+					<div class="container">
+						<div class="post-utp__container">
+							<div class="arrow-down post-utp__arrow-down"></div>
+						</div>
+						
+						<div class="post-utp__content">
+							<div class="post-utp__img">
+								<img src="img/assets/utp/utp-1.jpg" alt="">
+							</div>
+							<div class="post-utp__text">
+								<div class="post-utp__title-mob">
+									<div class="title post-utp__title-vertical">Шкафы-купе</div>
+									<div class="title post-utp__title">Заголовок про шкафы купе Заголовок про шкафы купе</div>
+								</div>
+								<p>текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст  текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+								<div class="post-utp__bottom">
+									<a class="btn post-utp__btn" href="case-compartment.html">Узнать подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="post-utp__item post-utp__item--pink post-utp__item--revers">
+					<div class="container">
+						<div class="post-utp__container">
+							<div class="arrow-down post-utp__arrow-down"></div>
+						</div>
+						<div class="post-utp__content">
+							<div class="post-utp__img">
+								<img src="img/assets/utp/utp-2.jpg" alt="">
+							</div>
+							<div class="post-utp__text">
+								<div class="post-utp__title-mob">
+									<div class="title post-utp__title-vertical">Кухни</div>
+									<div class="title post-utp__title">Заголовок про кухни Заголовок про кухни</div>
+								</div>
+								<p>текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст  текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+								<div class="post-utp__bottom">
+									<a class="btn post-utp__btn" href="kitchen.html">Узнать подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="post-utp__item post-utp__item--pink post-utp__item--long-title">
+					<div class="container">
+						<div class="post-utp__container">
+							<div class="arrow-down post-utp__arrow-down"></div>
+						</div>
+						<div class="post-utp__content">
+							<div class="post-utp__img">
+								<img src="img/assets/utp/utp-3.jpg" alt="">
+							</div>
+							<div class="post-utp__text">
+								<div class="post-utp__title-mob">
+									<div class="title post-utp__title-vertical">Стекольно-зеркальная продукция</div>
+									<div class="title post-utp__title">Заголовок про стекольно-зеркальную продукцию</div>
+								</div>
+								<p>текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст  текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+								<div class="post-utp__bottom">
+									<a class="btn post-utp__btn" href="mirrors-production.html">Узнать подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="post-utp__item post-utp__item--revers">
+					<div class="container">
+						<div class="post-utp__container">
+							<div class="arrow-down post-utp__arrow-down"></div>
+						</div>
+						<div class="post-utp__content">
+							<div class="post-utp__img">
+								<img src="img/assets/utp/utp-4.jpg" alt="">
+							</div>
+							<div class="post-utp__text">
+								<div class="post-utp__title-mob">
+									<div class="title post-utp__title-vertical">Фасады МДФ</div>
+									<div class="title post-utp__title">Заголовок про фасады МДФ Заголовок про фасады МДФ</div>
+								</div>
+								<p>текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст  текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+								<div class="post-utp__bottom">
+									<a class="btn post-utp__btn" href="#">Узнать подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="features">
+				<div class="container">
+					<div class="features__container">
+						<div class="arrow-down features__arrow-down"></div>	
+					</div>
+					<div class="features__row">
+						<div class="title features__title">Наши преимущества</div>
+						<div class="features__list">
+							<div class="features__col">
+								<div class="features__ico">
+									<img src="img/vendor/features/ico-measure.png" alt="">
+								</div>
+								<div class="features__name">Замер за 1 час</div>
+								<div class="features__descr">Наш сотрудник в течении 1 часа сделает все необходимые замеры для получения точных данных о вашей кухне</div>
+							</div>
+							<div class="features__col">
+								<div class="features__ico">
+									<img src="img/vendor/features/ico-project.png" alt="">
+								</div>
+								<div class="features__name">Кухни любой сложности</div>
+								<div class="features__descr">Просто найдите фотографию кухни, которая вам очень нравится, и покажите ее нам</div>
+							</div>
+							<div class="features__col">
+								<div class="features__ico">
+									<img src="img/vendor/features/ico-saw.png" alt="">
+								</div>
+								<div class="features__name">Свое производство</div>
+								<div class="features__descr">Мы контролируем процесс и гарантируем качество на всех этапах производства</div>
+							</div>
+							<div class="features__col">
+								<div class="features__ico">
+									<img src="img/vendor/features/ico-credit-card.png" alt="">
+								</div>
+								<div class="features__name">Оплата картой</div>
+								<div class="features__descr">Вы можете оплачивать заказ любым удобным для Вас способом</div>
+							</div>
+							<div class="features__col">
+								<div class="features__ico">
+									<img src="img/vendor/features/ico-truck.png" alt="">
+								</div>
+								<div class="features__name">Бесплатная доставка</div>
+								<div class="features__descr">Мы бесплатно доставляем по Кирову любой наш заказ до квартиры</div>
+							</div>
+							<div class="features__col">
+								<div class="features__ico">
+									<img src="img/vendor/features/ico-screw.png" alt="">
+								</div>
+								<div class="features__name">Всего 3% сборка</div>
+								<div class="features__descr">Наши сборщики с опытом работы более 10 лет соберут мебель качественно и чисто</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="converce" id="nav-converce">
+				<div class="container">
+					<div class="converce__row">
+						<div class="converce__head">
+							<div class="converce__title">Получите <span class="nowrap">дизайн-проект</span> вашей будущей мебели в один клик!</div>
+							<div class="converce__sub-title">Заполните форму и ждите звонка от  нашего сотрудника</div>
+						</div>	
+						<div class="converce__form">
+							<div class="converce__form-title">Укажите, как с вами связаться</div>
+							<form action="feedback-window.html">
+								<div class="form-row">
+									<div class="form-field form-field--success">
+										<input class="form-control" type="text" name="user_name" placeholder="Имя">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-field form-field--error">
+										<input class="form-control" type="text" name="user_city" placeholder="Город">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-field">
+										<input class="form-control" type="text" name="user_phone" placeholder="Телефон">
+									</div>
+								</div>
+								<button class="btn converce__form-submit">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="reasons reasons--main-mob">
+				<div class="container">
+					<div class="reasons__row">
+						<div class="reasons__list">
+							<div class="reasons__title">5 очевидных причин посетить наш салон</div>
+							<ol class="reasons__list-num">
+								<li class="reasons__item">Узнать цену своего шкафа или кухни за 5 минут</li>
+								<li class="reasons__item">Оценить работу различных механизмов</li>
+								<li class="reasons__item">Изучить мебельные материалы</li>
+								<li class="reasons__item">Посмотреть образцы шкафов</li>
+								<li class="reasons__item">Посоветоваться с дизайнерами</li>
+							</ol>
+							<a class="btn reasons__btn" href="contacts.html">Где мы находимся</a>
+						</div>
+		
+						<div class="reasons__video video-play-js" data-video="https://www.youtube.com/embed/sXgMXclpPwE">
+							<div class="reasons__video-name">
+								Смотрите видео о нашем салоне
+								<div class="arrow-down reasons__arrow-down"></div>
+							</div>
+
+							<div class="title reasons__title-vertical">Преимущество</div>
+							<div class="reasons__video-frame video-iframe-js"></div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>	
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+				<a class="footer__logo-footer logo-footer" href="index.html">
+					<img src="img/vendor/logo-footer.png" alt="">
+				</a>
+				<div class="footer__menu">
+					<ul class="menu-footer">
+						<li class="menu-footer__item"><a href="kitchen.html" class="menu-footer__link">Кухни</a></li>
+						<li class="menu-footer__item"><a href="case-compartment.html" class="menu-footer__link">Шкафы-купе</a></li>
+						<li class="menu-footer__item"><a href="facades-mdf.html" class="menu-footer__link">Фасады МДФ</a></li>
+						<li class="menu-footer__item"><a href="mirrors-production.html" class="menu-footer__link">Стекольно-зеркальная продукция</a></li>
+					</ul>
+					<ul class="menu-footer">	
+						<li class="menu-footer__item"><a href="about.html" class="menu-footer__link">О фабрике</a></li>
+						<li class="menu-footer__item"><a href="our-works.html" class="menu-footer__link">Наши работы</a></li>
+						<li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link">Отзывы</a></li>
+					</ul>
+					<ul class="menu-footer">	
+						<li class="menu-footer__item"><a href="contacts.html" class="menu-footer__link">Контакты</a></li>
+						<li class="menu-footer__item"><a href="#" class="menu-footer__link">Сотрудничество</a></li>
+					</ul>
+				</div>
+				<div class="footer__social social">
+					<a class="social__link social__link--inst" href="#">
+						<span class="visually-hidden">Инстаграм</span>
+					</a>
+					<a class="social__link social__link--vk" href="#">
+						<span class="visually-hidden">Вконтакте</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="fixed-panel">
+		<a href="#" class="btn btn--calc">Рассчитать стоимость кухни</a>
+	</div>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

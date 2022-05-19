@@ -1,0 +1,64 @@
+.menu-footer {
+	@include list();
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 100px 30px 0;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&__item {
+		margin-bottom: -2px;
+		line-height: 26px;
+	}
+
+	&__link {
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 300;
+		color: $black;
+		transition: all .2s;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	@media(max-width: 1024px) {
+		& {
+			margin-right: 86px;
+		}
+	}
+
+
+	@media(max-width: 992px) {
+		& {
+			margin-bottom: 0;
+		} 
+
+		&__link {
+			font-size: 11px;
+		}
+	}
+
+	@media(max-width: 479px) {
+		& {
+			margin-right: 25px;
+		}
+	}
+
+	@media(max-width: 359px) {
+
+		& {
+			margin-right: 20px;
+		}
+
+		&__item {
+			line-height: 18px;
+			margin-bottom: 5px;
+			max-width: 124px;
+		}
+	}
+
+}

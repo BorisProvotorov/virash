@@ -1,0 +1,23 @@
+.arrow-down {
+	width: 32px;
+	height: 32px;
+	background-color: #B59EC9;
+	background-image: url('../img/ico-arrow-down.png');
+	background-position: center;
+	background-repeat:no-repeat;
+	
+	&--pos-25 {
+		position: absolute;
+		left: 25% !important;
+	}
+
+	&--pos-50 {
+		position: absolute;
+		left: 50% !important;
+	}
+
+	&--pos-75 {
+		position: absolute;
+		left: 75% !important;
+	}
+}
